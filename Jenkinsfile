@@ -4,10 +4,11 @@ pipeline {
         stage('Build'){
   
             steps {
-                 sh 'pwd'
-                sh 'env'
-                 sh '/usr/local/bin/npm install'
+             
+                 sh 'export PATH=/usr/local/bin:$PATH'
+                 sh 'npm install'
             }
+        
         }
     }
 }
