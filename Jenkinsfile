@@ -4,7 +4,7 @@ pipeline {
         stage('Build'){
   
             steps {
-                 sh ''pwd '
+                 sh 'pwd'
                 sh 'env'
                  sh '/usr/local/bin/npm install'
             }
